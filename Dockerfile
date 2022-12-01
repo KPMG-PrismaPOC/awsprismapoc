@@ -3,7 +3,6 @@ WORKDIR /app
 COPY app /app
 RUN mvn clean package
 
-
 FROM tomcat:9.0-slim
 COPY flag /flag
 EXPOSE 8080
